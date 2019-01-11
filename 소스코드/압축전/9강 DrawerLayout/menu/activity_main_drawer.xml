@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+   <item android:title="메뉴1">
+      <menu>
+         <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/menu1_1"
+                android:icon="@android:drawable/ic_menu_add"
+                android:title="메뉴1-1"/>
+            <item
+                android:id="@+id/menu1_2"
+                android:icon="@android:drawable/ic_menu_agenda"
+                android:title="메뉴1-2"/>
+            <item
+                android:id="@+id/menu1_3"
+                android:icon="@android:drawable/ic_menu_always_landscape_portrait"
+                android:title="메뉴1-3"/>
+         </group>
+      </menu>
+   </item>
+
+   <item android:title="메뉴2">
+      <menu>
+         <item
+             android:id="@+id/menu2_1"
+             android:icon="@android:drawable/ic_menu_add"
+             android:title="메뉴2-1"/>
+         <item
+             android:id="@+id/menu2_2"
+             android:icon="@android:drawable/ic_menu_agenda"
+             android:title="메뉴2-2"/>
+         <item
+             android:id="@+id/menu2_3"
+             android:icon="@android:drawable/ic_menu_always_landscape_portrait"
+             android:title="메뉴2-3"/>
+      </menu>
+   </item>
+
+</menu>

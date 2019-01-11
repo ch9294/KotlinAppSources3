@@ -1,0 +1,11 @@
+create sequence mobile_seq
+start with 0
+increment by 1
+minvalue 0;
+
+create table mobile_table(
+	mobile_idx number primary key,
+	mobile_img varchar2(500) not null,
+	mobile_str1 varchar2(500) not null,
+	mobile_str2 varchar2(500) not null
+);

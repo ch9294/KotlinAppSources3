@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="입력">
+
+        <EditTextPreference
+            android:key="data1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:icon="@android:drawable/ic_menu_always_landscape_portrait"
+            android:dialogTitle="타이틀"
+            android:dialogMessage="문자열 입력 입니다"
+            android:positiveButtonText="확인버튼"
+            android:negativeButtonText="취소버튼"
+            android:title="문자열 입력" />
+        <CheckBoxPreference
+            android:icon="@android:drawable/ic_menu_camera"
+            android:key="data2"
+            android:summaryOff="체크되어 있지 않습니다"
+            android:summaryOn="체크되어 있습니다"
+            android:title="체크박스" />
+        <SwitchPreference
+            android:key="data3"
+            android:summaryOff="스위치오프"
+            android:summaryOn="스위치온"
+            android:switchTextOff="OFF"
+            android:switchTextOn="ON"
+            android:title="스위치" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="리스트">
+
+        <ListPreference
+            android:entries="@array/list_title"
+            android:entryValues="@array/list_value"
+            android:icon="@android:drawable/ic_menu_delete"
+            android:key="data4"
+            android:negativeButtonText="취소"
+            android:title="일반 리스트" />
+        <MultiSelectListPreference
+            android:entries="@array/list_title"
+            android:entryValues="@array/list_value"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:key="data5"
+            android:negativeButtonText="취소"
+            android:positiveButtonText="확인"
+            android:title="멀티 리스트" />
+    </PreferenceCategory>
+</PreferenceScreen>

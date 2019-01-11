@@ -1,0 +1,9 @@
+create sequence fcm_seq
+start with 0
+increment by 1
+minvalue 0;
+
+create table fcm_table(
+    fcm_idx number primary key,
+    fcm_token varchar2(500) not null
+);
